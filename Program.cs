@@ -10,6 +10,7 @@ namespace MagicalInheritance
             //Storm s = new Storm("wind", false, "Zul rajas");
             //call the Storm method
             //Console.WriteLine(s.Announce());
+            //create an object with arguments
             Pupil p = new Pupil("Mezi-kree");
 
             //call the methods that return Storm type
@@ -17,6 +18,11 @@ namespace MagicalInheritance
 
             //use Announce method to check if the wind is weak or not
             Console.WriteLine(windStorm.Announce());
+
+            //create an object with arguments
+            Mage m = new Mage("Gul's dan");
+            Storm rainStorm = m.CastRainStorm();
+            Console.WriteLine(rainStorm.Announce());
         }
     }
 }
