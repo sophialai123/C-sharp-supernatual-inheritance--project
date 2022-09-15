@@ -23,6 +23,13 @@ namespace MagicalInheritance
             Mage m = new Mage("Gul's dan");
             Storm rainStorm = m.CastRainStorm();
             Console.WriteLine(rainStorm.Announce());
+
+            //create a new object
+            Archmage a = new Archmage("Aran");
+            Storm lightingRainStorm = a.CastRainStorm();
+            Storm LightningStorm = a.CastLightningStorm();
+            Console.WriteLine(lightingRainStorm.Announce());
+            Console.WriteLine(LightningStorm.Announce());
         }
     }
 }

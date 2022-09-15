@@ -12,7 +12,8 @@ namespace MagicalInheritance
         }
 
         //method return Storm type
-        public Storm CastRainStorm()
+        // virtual method can be override in the children class
+        public virtual Storm CastRainStorm()
         {
             //return Storm object from Storm class
             return new Storm("rain", false, Title);
